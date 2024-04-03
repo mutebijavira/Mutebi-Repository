@@ -5,13 +5,14 @@
 /* side-navigation */
 .side-navigation{
     width: 230px;
-    /* height:700px; */
+    height:600px;
     margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: centre;
     border-right: 1px solid grey;
+    position: fixed;
 
 }
 .instagram-logo img{
@@ -59,6 +60,11 @@
     font-weight: 400;
 }
 /* hero-section */
+.Posts-section{
+    margin-left: 240px;
+    margin-top: 20px;
+}
+
 /* stories */
 .stories{
     display: flex;
@@ -83,8 +89,131 @@
     font-weight: 300;
 }
 /* following-section */
+.following{
+    width: 471px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.posts{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.post{
+    width: 471px;
+}
+.followig-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:10px ;
+}
+.following-profile{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 .following-profile img{
     width: 40px;
     height: 40px;
     border-radius: 20px;
+}
+
+.following-profile h3{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+.following-profile h5{
+    padding: 0;
+    margin: 0;
+    font-size: 11px;
+}
+.post-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.post-icons img{
+    width:14px;
+    height:14px;
+}
+.posts-comments h3{
+    font-size: 12px;
+}
+.posts-comments h5{
+    font-size: 12px;
+    color: rgba(0,0,0,0.6)
+}
+.posts-comment{
+    display: flex;
+    flex-direction: row;
+    align-items: last baseline;
+    justify-content: space-between;
+}
+.posts-comment img{
+    color: rgba(0,0,0,0.6)
+}
+/* people section */
+.people-section{
+    width: 350px;
+    margin-right: 0;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.profile-elements{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+.profile-elements img{
+    height: 60px;
+    width: 60px;
+    border-radius: 40px;
+}
+.profile-elements h4{
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+.profile-elements h5{
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    color: rgba(0,0,0,0.5);
+}
+.person-profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.suggested{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.suggested h5{
+    cursor: pointer;
+}
+.person-profile button{
+    border: none;
+    background-color: rgba(248, 245, 245, 0.1);
+    color: blue;
+    cursor: pointer;
+}
+.about ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 100px;
+    list-style-type: none;
+    max-width: 350px;
+
 }
