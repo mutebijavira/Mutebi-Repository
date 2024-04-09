@@ -1,3 +1,42 @@
+:root{
+    /* colors */
+    --color-grey:grey;
+    --color-pink:pink;
+    --color-light-black:rgba(0,0,0,0.6);
+    --color-border:rgba(0,0,0,0.1);
+    --color-blue:blue;
+    --color-background:rgba(248,245,245,0.1)
+
+    --icon-size:14px;
+
+    /* font-sizes */
+    --font-size-sm:12px;
+    --font-size-md:14px;
+    --font-size-lg:16px;
+    --font-size-xl:20px;
+  
+    /* spacing */
+    --spacing-small:5px;
+    --spacing-medium:10px;
+    --spacing-large:20px;
+    --spacing-xlarge:30px;
+    --margin-default:20px;
+
+    /* border */
+    --border-standard:1px solid var(--color-grey);
+    --border-radius-half:20px;
+    --border-radius-full:34px;
+    
+    /* dimensions */
+    --size-icon-small:14px;
+    --size-icon-medium:25px;
+    --size-profile-large:60px;
+    --width-container:471px;
+    --width-side-navigation:230px;
+    --height-side-navigation:600px;
+
+
+}
 body {
     font-family: 'Roboto';
 }
@@ -8,9 +47,9 @@ body {
 }
 /* side-navigation */
 .side-navigation{
-    width: 230px;
-    height:600px;
-    margin-left: 20px;
+    width: var(--width-side-navigation);
+    height:var(--height-side-navigation);
+    margin-left: var(--spacing-large);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,14 +61,14 @@ body {
 .instagram-logo img{
     height:32px;
     width:103px;
-    margin-top:30px;
-    margin-bottom: 30px;
+    margin-top:var(--spacing-xlarge);
+    margin-bottom:var(--spacing-xlarge);
 }
 .sidenav-icons{
     display: flex;
     /* flex-direction: column; */
     align-items: center;
-    gap: 20px;
+    gap: var(--spacing-large);
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     overflow-y: visible;
@@ -37,43 +76,43 @@ body {
     margin-bottom: 15px;
 }
 .sidenav-icons img{
-    height:25px;
-    width: 25px;
+    height:var(--size-icon-medium);
+    width: var(--size-icon-medium);
 }
 .sidenav-icons h2{
-    font-size: 16px;
+    font-size: var(--font-size-lg);
     font-weight: 400;
 }
 .sidenav-more{
-    margin-top: 10px;
+    margin-top: var(--spacing-medium);
     display: flex;
     /* flex-direction: column; */
     align-items: center;
-    gap: 20px;
+    gap: var(--spacing-large);
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     overflow-y: visible;
     /* hover: color red; */
 }
 .sidenav-more img{
-    height:25px;
-    width: 25px;
+    height:var(--size-icon-medium);
+    width: var(--size-icon-medium);
 }
 .sidenav-more h2{
-    font-size: 16px;
+    font-size: var(--font-size-lg);
     font-weight: 400;
 }
 /* hero-section */
 .Posts-section{
     margin-left: 240px;
-    margin-top: 20px;
+    margin-top: var(--spacing-large);
 }
 
 /* stories */
 .stories{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: var(--spacing-large);
     margin-left: 50px;
 }
 .stories-content{
@@ -82,56 +121,56 @@ body {
     align-items: center;
 }
 .stories-content img{
-    height:60px;
-    width:60px;
-    border-radius: 34px;
+    height:var(--size-profile-large);
+    width:var(--size-profile-large);
+    border-radius: var(--border-radius-full);
     border-style: double;
-    border-color: pink;
+    border-color: var(--color-pink);
 }
 .stories-content h3{
-    font-size: 12px;
+    font-size: var(--font-size-sm);
     font-weight: 300;
 }
 /* following-section */
 .following{
-    width: 471px;
+    width: var(--width-container);
     margin-left: 80px;
-    margin-top: 20px;
+    margin-top: var(--spacing-large);
 }
 .posts{
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color-grey);
+    margin-bottom: var(--spacing-large);
 }
 .post{
-    width: 471px;
+    width: var(--width-container);
 }
 .followig-header{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom:10px ;
+    margin-bottom:var(--spacing-medium) ;
 }
 .following-profile{
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap:var(--spacing-small);
 }
 .following-profile img{
     width: 40px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: var(--border-radius-half);
 }
 
 .following-profile h3{
     padding: 0;
     margin: 0;
-    font-size: 12px;
+    font-size: var(--font-size-sm);
 }
 .following-profile h5{
     padding: 0;
     margin: 0;
-    font-size: 11px;
+    font-size: var(--font-size-sm);
 }
 .post-icons{
     display: flex;
@@ -139,15 +178,15 @@ body {
     justify-content: space-between;
 }
 .post-icons img{
-    width:14px;
-    height:14px;
+    width:var(--icon-size);
+    height:var(--icon-size);
 }
 .posts-comments h3{
-    font-size: 12px;
+    font-size: var(--font-size-sm);
 }
 .posts-comments h5{
-    font-size: 12px;
-    color: rgba(0,0,0,0.6)
+    font-size: var(--font-size-sm);
+    color: var(--color-light-black)
 }
 .posts-comment{
     display: flex;
@@ -156,38 +195,38 @@ body {
     justify-content: space-between;
 }
 .posts-comment img{
-    color: rgba(0,0,0,0.6)
+    color: var(--color-light-black)
 }
 /* people section */
 .people-section{
     max-width: 300px;
     margin-right: 0;
     margin-left: 40px;
-    margin-top: 20px;
+    margin-top: var(--spacing-large);
 }
 .profile-elements{
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: var(--spacing-small);
     align-items: center;
 }
 .profile-elements img{
-    height: 60px;
-    width: 60px;
+    height: var(--size-profile-large);
+    width: var(--size-profile-large);
     border-radius: 40px;
 }
 .profile-elements h4{
-    font-size: 14px;
+    font-size: var(--font-size-sm);
     padding: 0;
     margin: 0;
     font-weight: 400;
 }
 .profile-elements h5{
-    font-size: 12px;
+    font-size: var(--font-size-sm);
     padding: 0;
     margin: 0;
     font-weight: 300;
-    color: rgba(0,0,0,0.5);
+    color: var(--color-light-black);
 }
 .person-profile{
     display: flex;
@@ -200,28 +239,29 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top:var(--spacing-medium);
+    padding-bottom: var(--spacing-medium);
 }
 .suggested h5{
     cursor: pointer;
 }
 .person-profile button{
     border: none;
-    background-color: rgba(248, 245, 245, 0.1);
-    color: blue;
+    background-color: var(--color-background);
+    color: var(--color-blue);
     cursor: pointer;
 }
 .about ul{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: var(--spacing-medium);
     height: 100px;
     list-style-type: none;
-    width: 300px;
-    color: rgba(0,0,0,0.6);
+    /* width: 300px; */
+    color: var(--color-light-black);
+    flex-wrap: wrap;
 }
 .copyright{
-    color: rgba(0,0,0,0.6);
+    color: var(--color-light-black);
     font-weight: 200;
 }
